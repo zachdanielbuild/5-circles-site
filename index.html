@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <style>
-:root{--blue:#2563C9;--navy:#0E1336;--ink:#0B0D14;--c1:#4B3FA8;--c2:#38AEEA;--c3:#0E7A6B;--c4:#E8A317;--c5:#C8442B;--sky:#9CC4FF}
+:root{--blue:#2563C9;--navy:#0E1336;--ink:#0B0D14;--c1:#BFD7FF;--c2:#7FAEF5;--c3:#2563C9;--c4:#1A3F8F;--c5:#0E1336;--sky:#9CC4FF}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font-family:'Figtree',system-ui,sans-serif;color:var(--navy);background:#fff;-webkit-font-smoothing:antialiased}
@@ -18,7 +18,7 @@ a{color:inherit}
 .wrap{max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,52px)}
 .label{margin:0;font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
 .dots{display:inline-flex;gap:3px}
-.dots span{width:8px;height:8px;border-radius:50%}
+.dots span{width:8px;height:8px;border-radius:50%;box-shadow:0 0 0 1.5px rgba(255,255,255,.75)}
 .d1{background:var(--c1)}.d2{background:var(--c2)}.d3{background:var(--c3)}.d4{background:var(--c4)}.d5{background:var(--c5)}
 .pill{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:54px;padding:0 30px;border-radius:999px;text-decoration:none;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 .bar5{display:flex;height:6px}.bar5 span{flex:1}
@@ -72,7 +72,7 @@ a{color:inherit}
 .stripe{position:absolute;left:0;right:0;bottom:0;height:1.7cqw}
 .chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1.7cqw}
 .chips li{padding:1.85cqw 3.1cqw;border-radius:999px;border:.28cqw solid rgba(255,255,255,.75);font-size:3.3cqw;font-weight:600;display:flex;align-items:center;gap:1.3cqw}
-.chips.world li{background:rgba(224,88,61,.2);border-color:rgba(224,88,61,.7)}
+.chips.world li{background:rgba(191,215,255,.16);border-color:rgba(191,215,255,.6)}
 .chips.world svg{width:3.1cqw;height:3.1cqw}
 .counter{position:absolute;right:12px;top:12px;padding:4px 10px;border-radius:999px;background:rgba(11,13,20,.7);color:#fff;font-size:13px;font-weight:600;pointer-events:none}
 .arrow{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.92);box-shadow:0 2px 10px rgba(0,0,0,.2);cursor:pointer;display:flex;align-items:center;justify-content:center}
@@ -122,7 +122,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
 footer nav{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15px;font-weight:600}
 footer nav a{text-decoration:none;padding:10px 0}
 footer nav a:hover{text-decoration:underline}
-.foot-dots span{width:12px;height:12px;box-shadow:0 0 0 1.5px #fff}
+.foot-dots span{width:12px;height:12px;box-shadow:0 0 0 1.5px #fff !important}
 </style>
 </head>
 <body>
@@ -159,14 +159,14 @@ footer nav a:hover{text-decoration:underline}
   <div class="wrap">
     <article class="post" aria-label="The 5 Circles, a swipeable post">
       <div class="post-head">
-        <span class="avatar" aria-hidden="true"><span style="background:#6E62D6"></span><span style="background:#38AEEA"></span><span style="background:#17A08D"></span><span style="background:#E8A317"></span><span style="background:#E0583D"></span></span>
+        <span class="avatar" aria-hidden="true"><span style="background:#BFD7FF"></span><span style="background:#7FAEF5"></span><span style="background:#2563C9"></span><span style="background:#1A3F8F"></span><span style="background:#0E1336;box-shadow:0 0 0 1px rgba(255,255,255,.75)"></span></span>
         <span class="post-name"><b>5 Circles</b><small>An Antioch Movement Resource</small></span>
       </div>
       <div class="stage">
         <ol class="track" id="track" aria-label="The 5 Circles, slide by slide">
           <li class="slide" style="background:var(--blue)">
             <div class="slide-pad" style="justify-content:space-between">
-              <span aria-hidden="true" style="display:flex;gap:1.3cqw"><span style="width:4.4cqw;height:4.4cqw;border-radius:50%;background:var(--c1);box-shadow:0 0 0 .4cqw #fff"></span><span style="width:4.4cqw;height:4.4cqw;border-radius:50%;background:var(--c2);box-shadow:0 0 0 .4cqw #fff"></span><span style="width:4.4cqw;height:4.4cqw;border-radius:50%;background:var(--c3);box-shadow:0 0 0 .4cqw #fff"></span><span style="width:4.4cqw;height:4.4cqw;border-radius:50%;background:var(--c4);box-shadow:0 0 0 .4cqw #fff"></span><span style="width:4.4cqw;height:4.4cqw;border-radius:50%;background:var(--c5);box-shadow:0 0 0 .4cqw #fff"></span></span>
+              <span aria-hidden="true" style="align-self:flex-start;display:flex;gap:1.3cqw;padding:1.3cqw 1.8cqw;border-radius:999px;background:#fff"><span style="width:4.4cqw;height:4.4cqw;border-radius:50%;background:var(--c1);box-shadow:0 0 0 .4cqw #fff"></span><span style="width:4.4cqw;height:4.4cqw;border-radius:50%;background:var(--c2);box-shadow:0 0 0 .4cqw #fff"></span><span style="width:4.4cqw;height:4.4cqw;border-radius:50%;background:var(--c3);box-shadow:0 0 0 .4cqw #fff"></span><span style="width:4.4cqw;height:4.4cqw;border-radius:50%;background:var(--c4);box-shadow:0 0 0 .4cqw #fff"></span><span style="width:4.4cqw;height:4.4cqw;border-radius:50%;background:var(--c5);box-shadow:0 0 0 .4cqw #fff"></span></span>
               <div style="display:flex;flex-direction:column;gap:3.3cqw">
                 <p class="s-label" style="opacity:.85">What are the 5 Circles?</p>
                 <h2 class="s-big" style="font-size:11.85cqw">From the secret place to neighborhoods and nations.</h2>
@@ -179,7 +179,7 @@ footer nav a:hover{text-decoration:underline}
             <img src="images/alt/circle1.jpg" alt="Hands on an open Bible at a table" loading="lazy">
             <span class="shade" aria-hidden="true"></span>
             <div class="copy">
-              <div class="badge-row"><span class="badge" style="background:var(--c1)">1</span><span class="s-label">Circle 1 of 5</span></div>
+              <div class="badge-row"><span class="badge" style="background:var(--c1);color:var(--navy)">1</span><span class="s-label">Circle 1 of 5</span></div>
               <h3 class="s-big">Personal Devotional Life</h3>
               <p class="s-phrase">Passion for Jesus is born in the secret place.</p>
               <span class="refs"><i style="background:var(--c1)"></i>Psalm 27:4, 8 · Acts 4:13</span>
@@ -215,7 +215,7 @@ footer nav a:hover{text-decoration:underline}
             <img src="images/alt/circle4.jpg" alt="A woman worshiping during a gathering" loading="lazy">
             <span class="shade" aria-hidden="true"></span>
             <div class="copy">
-              <div class="badge-row"><span class="badge" style="background:var(--c4);color:var(--navy)">4</span><span class="s-label">Circle 4 of 5</span></div>
+              <div class="badge-row"><span class="badge" style="background:var(--c4)">4</span><span class="s-label">Circle 4 of 5</span></div>
               <h3 class="s-big">Church Gathered</h3>
               <p class="s-phrase">It is strengthened when we gather.</p>
               <span class="refs"><i style="background:var(--c4)"></i>Acts 2:46-47 · Eph. 4:11-12</span>
@@ -235,30 +235,30 @@ footer nav a:hover{text-decoration:underline}
             <span class="stripe" style="background:var(--c5)" aria-hidden="true"></span>
           </li>
 
-          <li class="slide" style="background:var(--c5)">
+          <li class="slide" style="background:#2563C9">
             <div class="slide-pad" style="justify-content:center;gap:4.8cqw">
-              <div class="badge-row"><span class="badge" style="background:#fff;color:var(--c5);box-shadow:none">5</span><span class="s-label">Witness in the World</span></div>
+              <div class="badge-row"><span class="badge" style="background:#fff;color:#2563C9;box-shadow:none">5</span><span class="s-label">Witness in the World</span></div>
               <h3 class="s-big" style="max-width:82cqw">Into every sphere of society</h3>
               <ul class="chips"><li>School</li><li>Family</li><li>Neighborhood</li><li>Business</li><li>Healthcare</li><li>Social Justice</li><li>Government</li><li>Arts &amp; Media</li><li>Sports</li></ul>
             </div>
-            <span class="stripe" style="background:var(--navy)" aria-hidden="true"></span>
+            <span class="stripe" style="background:#BFD7FF" aria-hidden="true"></span>
           </li>
 
-          <li class="slide" style="background:#14182B">
+          <li class="slide" style="background:#1A3F8F">
             <div class="slide-pad" style="justify-content:center;gap:4.8cqw">
-              <div class="badge-row"><span class="badge" style="background:var(--c5)">5</span><span class="s-label">Witness in the World</span></div>
+              <div class="badge-row"><span class="badge" style="background:#fff;color:#1A3F8F;box-shadow:none">5</span><span class="s-label">Witness in the World</span></div>
               <h3 class="s-big" style="max-width:82cqw">To every nation &amp; every people group</h3>
               <ul class="chips world">
-                <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#F3A08F" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="#F3A08F" stroke-width="1.4"/></svg>Muslim World</li>
-                <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#F3A08F" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="#F3A08F" stroke-width="1.4"/></svg>Hindu World</li>
-                <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#F3A08F" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="#F3A08F" stroke-width="1.4"/></svg>Buddhist World</li>
-                <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#F3A08F" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="#F3A08F" stroke-width="1.4"/></svg>Tribal World</li>
-                <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#F3A08F" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="#F3A08F" stroke-width="1.4"/></svg>Chinese World</li>
-                <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#F3A08F" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="#F3A08F" stroke-width="1.4"/></svg>Jewish World</li>
-                <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#F3A08F" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="#F3A08F" stroke-width="1.4"/></svg>Secular West</li>
+                <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#BFD7FF" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="#BFD7FF" stroke-width="1.4"/></svg>Muslim World</li>
+                <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#BFD7FF" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="#BFD7FF" stroke-width="1.4"/></svg>Hindu World</li>
+                <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#BFD7FF" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="#BFD7FF" stroke-width="1.4"/></svg>Buddhist World</li>
+                <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#BFD7FF" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="#BFD7FF" stroke-width="1.4"/></svg>Tribal World</li>
+                <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#BFD7FF" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="#BFD7FF" stroke-width="1.4"/></svg>Chinese World</li>
+                <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#BFD7FF" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="#BFD7FF" stroke-width="1.4"/></svg>Jewish World</li>
+                <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#BFD7FF" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="#BFD7FF" stroke-width="1.4"/></svg>Secular West</li>
               </ul>
             </div>
-            <span class="stripe" style="background:var(--c5)" aria-hidden="true"></span>
+            <span class="stripe" style="background:#7FAEF5" aria-hidden="true"></span>
           </li>
 
           <li class="slide" style="background:var(--navy)">
@@ -298,7 +298,7 @@ footer nav a:hover{text-decoration:underline}
           <span class="s-blurb">[Two or three sentence blurb that sets up the story]</span>
           <span class="s-more"><span class="dots" aria-label="All five circles"><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span><span class="d5"></span></span>Read the story</span>
         </span>
-        <span class="s-photo" style="background:rgba(110,98,214,.3)">[Story photo]</span>
+        <span class="s-photo" style="background:rgba(191,215,255,.16)">[Story photo]</span>
       </a>
       <a class="story" href="#stories">
         <span>
@@ -307,7 +307,7 @@ footer nav a:hover{text-decoration:underline}
           <span class="s-blurb">[Two or three sentence blurb that sets up the story]</span>
           <span class="s-more"><span class="dots" aria-label="All five circles"><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span><span class="d5"></span></span>Read the story</span>
         </span>
-        <span class="s-photo" style="background:rgba(56,174,234,.24)">[Story photo]</span>
+        <span class="s-photo" style="background:rgba(127,174,245,.2)">[Story photo]</span>
       </a>
       <a class="story" href="#stories">
         <span>
@@ -316,7 +316,7 @@ footer nav a:hover{text-decoration:underline}
           <span class="s-blurb">[Two or three sentence blurb that sets up the story]</span>
           <span class="s-more"><span class="dots" aria-label="All five circles"><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span><span class="d5"></span></span>Read the story</span>
         </span>
-        <span class="s-photo" style="background:rgba(232,163,23,.24)">[Story photo]</span>
+        <span class="s-photo" style="background:rgba(37,99,201,.3)">[Story photo]</span>
       </a>
     </div>
     <p class="stories-foot">Every story shows all five circles at work.</p>
